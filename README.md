@@ -4,7 +4,7 @@ A combo of the Hello World and Middleware exercises.
 
 ## Part 1: Hello World
 
-- [ ] Make a Node.js program named that outputs "Hello World" to browsers making a `GET` request to the root (`/`) url.
+- [x] Make a Node.js program named that outputs "Hello World" to browsers making a `GET` request to the root (`/`) url.
 - [ ] Also, to browsers that make a `GET` request to `/time`, send the current date and time in ISO format: `2015-12-31T23:59:59.999Z`.
 - [ ] Finally, use an environment variable named `PORT` for the port number if one is provided. If one is not provided use `8080`.
     - i.e. The command below should start a server on the port `1337`.
