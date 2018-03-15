@@ -1,5 +1,8 @@
 # Express
 
+![](https://img.shields.io/badge/mvp-wip-yellow.svg)
+![](https://img.shields.io/badge/framework-express-orange.svg)
+
 A combo of the Hello World and Middleware exercises.
 
 ## Part 1: Hello World
@@ -20,12 +23,12 @@ A combo of the Hello World and Middleware exercises.
 
 ## Part 2: Easter Egg
 
-- [ ] Create a simple express app that includes the following routes:
-  - [ ] `/home`
-  - [ ] `/see-our-chickens`
-  - [ ] `/see-our-eggs`
-- [ ] Create a directory in your project for your simple `html` pages. Each route should have its own webpage.
-- [ ] Use a middleware to let your app know which static (cough, hint) `html` files it should use.
+- [x] Create a simple express app that includes the following routes:
+  - [x] `/home`
+  - [x] `/see-our-chickens`
+  - [x] `/see-our-eggs`
+- [x] Create a directory in your project for your simple `html` pages. Each route should have its own webpage.
+- [x] Use a middleware to let your app know which static (cough, hint) `html` files it should use.
 - [ ] Create your own middleware that will place an Easter Egg in your app (see below for specs).
 - [ ] Create a middleware that 'catches' the end of the stream if the requested route doesn't match your three defined routes and sends an error back to the browser with `res.send()`.
 
