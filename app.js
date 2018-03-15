@@ -13,9 +13,21 @@ app.use("/time", (req, res, next) => {
 
 app.use("/", eggRouter);
 
-app.use((req, res, next) => {
-    res.status(200);
-    res.end("Hello world");
+app.use("/:path", (req, res, next) => {
+    if (req.params.path) {
+        let err = new Error("This is not a valid page.");
+        next(err);
+    } else {
+        res.status(200);
+        res.end("Hello world");
+    }
+});
+
+app.use((err, req, res, next) => {
+    if (err) {
+        res.status = 500;
+        res.end("Booooo");
+    }
 });
 
 app.listen(port, () => {
